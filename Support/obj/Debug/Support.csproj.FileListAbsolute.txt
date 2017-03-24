@@ -1,0 +1,14 @@
+E:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\Support\bin\Debug\Support.dll
+E:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\Support\bin\Debug\Support.pdb
+E:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\Support\bin\Debug\DTO.dll
+E:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\Support\bin\Debug\DTO.pdb
+E:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\Support\obj\Debug\Support.csprojResolveAssemblyReference.cache
+E:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\Support\obj\Debug\Support.dll
+E:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\Support\obj\Debug\Support.pdb
+D:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\Support\bin\Debug\Support.dll
+D:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\Support\bin\Debug\Support.pdb
+D:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\Support\bin\Debug\DTO.dll
+D:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\Support\bin\Debug\DTO.pdb
+D:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\Support\obj\Debug\Support.csprojResolveAssemblyReference.cache
+D:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\Support\obj\Debug\Support.dll
+D:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\Support\obj\Debug\Support.pdb

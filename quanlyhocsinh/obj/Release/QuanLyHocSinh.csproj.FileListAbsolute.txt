@@ -1,0 +1,11 @@
+D:\Users\DANG\Desktop\code\QuanLyHocSinh\QuanLyHocSinh\bin\Release\QuanLyHocSinh.exe.config
+D:\Users\DANG\Desktop\code\QuanLyHocSinh\QuanLyHocSinh\obj\Release\QuanLyHocSinh.frmNhapDiem.resources
+D:\Users\DANG\Desktop\code\QuanLyHocSinh\QuanLyHocSinh\obj\Release\QuanLyHocSinh.frmQuanLyHocSinh.resources
+D:\Users\DANG\Desktop\code\QuanLyHocSinh\QuanLyHocSinh\obj\Release\QuanLyHocSinh.frmMain.resources
+D:\Users\DANG\Desktop\code\QuanLyHocSinh\QuanLyHocSinh\obj\Release\QuanLyHocSinh.frmThongKe.resources
+D:\Users\DANG\Desktop\code\QuanLyHocSinh\QuanLyHocSinh\obj\Release\QuanLyHocSinh.Properties.Resources.resources
+D:\Users\DANG\Desktop\code\QuanLyHocSinh\QuanLyHocSinh\obj\Release\QuanLyHocSinh.csproj.GenerateResource.Cache
+D:\Users\DANG\Desktop\code\QuanLyHocSinh\QuanLyHocSinh\bin\Release\QuanLyHocSinh.exe
+D:\Users\DANG\Desktop\code\QuanLyHocSinh\QuanLyHocSinh\bin\Release\QuanLyHocSinh.pdb
+D:\Users\DANG\Desktop\code\QuanLyHocSinh\QuanLyHocSinh\obj\Release\QuanLyHocSinh.exe
+D:\Users\DANG\Desktop\code\QuanLyHocSinh\QuanLyHocSinh\obj\Release\QuanLyHocSinh.pdb

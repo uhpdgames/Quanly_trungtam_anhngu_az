@@ -1,0 +1,10 @@
+E:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\DTO\bin\Debug\DTO.dll
+E:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\DTO\bin\Debug\DTO.pdb
+E:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+E:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\DTO\obj\Debug\DTO.dll
+E:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\DTO\obj\Debug\DTO.pdb
+D:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\DTO\bin\Debug\DTO.dll
+D:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\DTO\bin\Debug\DTO.pdb
+D:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\DTO\obj\Debug\DTO.dll
+D:\3. LEARNING\FreeDom\Project\demo_DO-AN\edit\QuanLY\DTO\obj\Debug\DTO.pdb

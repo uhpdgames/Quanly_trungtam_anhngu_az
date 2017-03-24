@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7739F70D-0FDD-4A3F-9137-4EE684C550B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyHocSinh</RootNamespace>
+    <AssemblyName>QuanLyHocSinh</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>D:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfoExtended, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Dmf, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Dmf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Dmf.Adapters, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Dmf.Adapters.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.DmfSqlClrWrapper, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.DmfSqlClrWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Collector, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Management.Collector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.CollectorEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Management.CollectorEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Utility, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Management.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.UtilityEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Management.UtilityEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.XEvent, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Management.XEvent.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.XEventDbScopedEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Management.XEventDbScopedEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.PolicyEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.PolicyEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.RegSvrEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.RegSvrEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ServiceBrokerEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.ServiceBrokerEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Diem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diem.Designer.cs">
+      <DependentUpon>Diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBanQuyen.Designer.cs">
+      <DependentUpon>frmBanQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanhSachLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanhSachLopHoc.Designer.cs">
+      <DependentUpon>frmDanhSachLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnectDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnectDatabase.Designer.cs">
+      <DependentUpon>frmConnectDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhoaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhoaHoc.Designer.cs">
+      <DependentUpon>frmKhoaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLopHoc.Designer.cs">
+      <DependentUpon>frmLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhapDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhapDiem.Designer.cs">
+      <DependentUpon>frmNhapDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyHocVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyHocVien.Designer.cs">
+      <DependentUpon>frmQuanLyHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKe.Designer.cs">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiangVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiangVien.Designer.cs">
+      <DependentUpon>frmGiangVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyHocSinhDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyHocSinhDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Diem.resx">
+      <DependentUpon>Diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBanQuyen.resx">
+      <DependentUpon>frmBanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDanhSachLopHoc.resx">
+      <DependentUpon>frmDanhSachLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiangVien.resx">
+      <DependentUpon>frmGiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnectDatabase.resx">
+      <DependentUpon>frmConnectDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhoaHoc.resx">
+      <DependentUpon>frmKhoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLopHoc.resx">
+      <DependentUpon>frmLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhapDiem.resx">
+      <DependentUpon>frmNhapDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyHocVien.resx">
+      <DependentUpon>frmQuanLyHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKe.resx">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <None Include="13520589\last_file.dvn">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QuanLyHocSinhDataSet.xsc">
+      <DependentUpon>QuanLyHocSinhDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyHocSinhDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyHocSinhDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyHocSinhDataSet.xss">
+      <DependentUpon>QuanLyHocSinhDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Huy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Luu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Them.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thoat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xoa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NhapDiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HocSinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonHoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonHoc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NhapDiem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThongKe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NienKhoa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GiaoVien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lophoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quidinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhanLop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTinhDiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTinhDiem1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTinhDiem2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnXemDiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNhapDiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diem2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\United-Kingdom-Flag-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\United-Kingdom-Flag-3-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supervisor-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teacher-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teacher-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supervisor-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jolly-roger-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Girl-Shock-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyes-office-women-red-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KetNoi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btntai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{f119afe9-f915-47f1-a9f3-b95ddce2e7e6}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{ec3377a8-89c2-4314-bbba-19155ba73ef3}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Support.csproj">
+      <Project>{1e7b488c-900c-4a92-93c8-907bc45b50fd}</Project>
+      <Name>Support</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ScriptFile\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korganizer-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
